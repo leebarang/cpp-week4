@@ -202,7 +202,9 @@ void get_entry(Database &database) {
                 std::cout << (char*)entry->value << std::endl;
                 break;
             case ARRAY:
-                std::cout << "Array" << std::endl;
+                Array& arr = *(Array*)entry->value;
+                print_array(arr);
+                std::cout << std::endl;
                 break;
         }
     } else {
