@@ -1,7 +1,8 @@
 # 데이터베이스 프로그램
-이 프로그램은 데이터베이스를 관리하고 상호작용할 수 있는 간단한 CLI(Command Line Interface) 도구입니다.
-사용자는 명령어 (list, add, get, del, exit) 를 입력하여 데이터베이스에 항목을 추가하거나 가져오거나 삭제할 수 있습니다.
-이 프로젝트에는 main.cpp, util.cpp, database.cpp, database.h 네 개의 파일이 포함되어 있습니다.
+이 프로그램은 데이터베이스를 관리하고 상호작용할 수 있는 간단한 CLI(Command Line Interface) 도구입니다.   
+사용자는 명령어 (list, add, get, del, exit) 를 입력하여 데이터베이스에 항목을 추가하거나 가져오거나 삭제할 수 있습니다.   
+이 프로젝트에는 main.cpp, util.cpp, database.cpp, database.h 네 개의 파일이 포함되어 있습니다.   
+@version 1.0.0
 
 ## 파일 구성
 ### main.cpp
@@ -16,16 +17,15 @@
 * get_entry(): get 명령어.
 * del_entry(): del 명령어.
 ### database.cpp
- - 위 파일은 database.h 을 구성한 것으로 자세한 코드는 database.h 에서 확인할 수 있습니다.
 * destroy(): 프로그램 종료 시 동적 할당한 개체를 delete 합니다.
+위 파일은 database.h 을 구성한 것으로 자세한 코드는 database.h 에서 확인할 수 있습니다.
 ### database.h
-
+프로그램의 구조체 등을 선언합니다.
 ## 실행 방법
-프로젝트를 다운로드하고 소스 코드를 가져옵니다.
-컴파일러가 C++11 이상을 지원하는지 확인합니다.
-미리 작성한 Makefile을 통해 실행하므로, Mingw를 설치했는지 확인합니다.
-* 본 프로그램에서는 mingw32-make를 사용했습니다.
-
+프로젝트를 다운로드하고 소스 코드를 가져옵니다.  
+컴파일러가 C++11 이상을 지원하는지 확인합니다.  
+미리 작성한 Makefile을 통해 실행하므로, Mingw를 설치했는지 확인합니다.  
+* 본 프로그램에서는 mingw32-make를 사용했습니다.  
 ```
 git clone https://github.com/leebarang/cpp-week4.git database 
 cd database
