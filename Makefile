@@ -7,8 +7,14 @@ TARGET = main.exe
 $(TARGET): $(OBJS)
 	${CC} -o $@ $(OBJS)
 
-%.o: %.cpp %.h
-	${CC} ${FLAGS} -c $<
+main.o: main.cpp database.h
+    ${CC} ${FLAGS} -c $<
+
+util.o: util.cpp database.h
+    ${CC} ${FLAGS} -c $<
+
+database.o: database.cpp database.h
+    ${CC} ${FLAGS} -c $<
 
 clean:
 	rm -f $(OBJS) $(TARGET)
