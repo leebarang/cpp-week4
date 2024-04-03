@@ -17,7 +17,7 @@
 * get_entry(): get 명령어.
 * del_entry(): del 명령어.
 ### database.cpp
-* destroy(): 프로그램 종료 시 동적 할당한 개체를 delete 합니다.
+* destroy(): 프로그램 종료 시 동적 할당한 개체를 delete 합니다.   
 위 파일은 database.h 을 구성한 것으로 자세한 코드는 database.h 에서 확인할 수 있습니다.
 ### database.h
 프로그램의 구조체 등을 선언합니다.
