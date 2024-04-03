@@ -7,7 +7,7 @@ TARGET = main.exe
 $(TARGET): $(OBJS)
 	${CC} -o $@ $(OBJS)
 
-%.o: %.cpp
+%.o: %.cpp %.h
 	${CC} ${FLAGS} -c $<
 
 clean:
