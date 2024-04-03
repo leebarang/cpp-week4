@@ -5,7 +5,7 @@ OBJS = main.o util.o database.o
 TARGET = main.exe
 
 $(TARGET): $(OBJS)
-	${CC} -o $@ $(OBJS)
+	$(CC) -o $@ $(OBJS)
 
 .c.o :
 	$(CC) -c -o $@ $<
