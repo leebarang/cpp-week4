@@ -1,14 +1,14 @@
+CC = g++
 FLAGS = -Werror -std=c++11
 
-SRCS = main.cpp util.cpp database.cpp
-OBJS = $(SRCS:.cpp=.o)
+OBJS = main.o util.o database.o
 TARGET = main.exe
 
 $(TARGET): $(OBJS)
-	g++ -o $@ $^
+	${CC} -o $@ $(OBJS)
 
 %.o: %.cpp
-	g++ ${FLAGS} -c $<
+	${CC} ${FLAGS} -c $<
 
 clean:
 	rm -f $(OBJS) $(TARGET)
