@@ -35,15 +35,15 @@ mingw32-make # make
 ```
 
 ## 실행 예시
-command (list, add, get, del, exit): add
-key: 1
-type (int, double, string, array): int
-value: 100
+command (list, add, get, del, exit): add   
+key: 1   
+type (int, double, string, array): int   
+value: 100   
+   
+command (list, add, get, del, exit): list   
+1: 100   
 
-command (list, add, get, del, exit): list
-1: 100
-
-command (list, add, get, del, exit): exit
+command (list, add, get, del, exit): exit   
 
 ## 주의사항
 이 프로젝트는 동적 할당으로 이론상 무한한 값을 저장할 수 있으나, 각 속성 배열의 최대 크기 등은
