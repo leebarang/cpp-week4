@@ -23,14 +23,13 @@
 프로그램의 구조체 등을 선언합니다.
 ## 실행 방법
 프로젝트를 다운로드하고 소스 코드를 가져옵니다.  
-컴파일러가 C++11 이상을 지원하는지 확인합니다.  
-미리 작성한 Makefile을 통해 실행하므로, Mingw를 설치했는지 확인합니다.  
+미리 작성한 Makefile을 통해 실행하므로, C++11 이상을 지원하는 관련 컴파일러를 설치했는지 확인합니다.  
 * 본 프로그램에서는 mingw32-make를 사용했습니다.  
 ```
 git clone https://github.com/leebarang/cpp-week4.git database 
 cd database
 
-mingw32-make # make
+make #mingw32-make
 ./main.exe
 ```
 
